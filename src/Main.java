@@ -2,6 +2,7 @@ import com.danielpm1982.annotation.MyAnnotation;
 import com.danielpm1982.datetime.MyDateTime;
 import com.danielpm1982.optional.MyOptional;
 import com.danielpm1982.reflection.MyReflection;
+import com.danielpm1982.regex.MyRegex;
 
 public class Main {
     public static void main(String[] args) {
@@ -20,6 +21,10 @@ public class Main {
         System.out.println("Initializing Annotation API demonstration...\n");
         MyAnnotation.execute();
         System.out.println("\nAnnotation API demonstration successfully executed !");
+        System.out.println("\n=============================================\n");
+        System.out.println("Initializing RegEx API demonstration...\n");
+        MyRegex.execute();
+        System.out.println("\nRegEx API demonstration successfully executed !");
     }
 }
 
