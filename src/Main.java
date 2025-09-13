@@ -1,3 +1,4 @@
+import com.danielpm1982.annotation.MyAnnotation;
 import com.danielpm1982.datetime.MyDateTime;
 import com.danielpm1982.optional.MyOptional;
 import com.danielpm1982.reflection.MyReflection;
@@ -15,6 +16,10 @@ public class Main {
         System.out.println("Initializing Reflection API demonstration...\n");
         MyReflection.execute();
         System.out.println("\nReflection API demonstration successfully executed !");
+        System.out.println("\n=============================================\n");
+        System.out.println("Initializing Annotation API demonstration...\n");
+        MyAnnotation.execute();
+        System.out.println("\nAnnotation API demonstration successfully executed !");
     }
 }
 

@@ -24,5 +24,5 @@ If the formatter is used along with the format() method (from the DateTimeFormat
 representation of a certain DateTime.
 If the formatter, otherwise, is used with the parse() method (from the LocalDateTime or ZonedDateTime classes), it
 inputs a String, at that specific format representation, into the LocalDateTime or ZonedDateTime. So the formatter
-works both ways, either outputting a data and/or time as a String or inputting a String into a data and/or time.
+works both ways, either outputting a date and/or time as a String or inputting a String into a date and/or time.
 */

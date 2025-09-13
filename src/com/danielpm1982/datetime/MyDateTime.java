@@ -47,7 +47,7 @@ representation of a certain Date, Time, LocalDateTime or ZonedDateTime, using th
 Secondly, and unrelated with the latter example, it is shown how to do the exact opposite: pass a String representation
 as argument to a LocalDateTime instance, along with a specific DateTimeFormatter configuration, also passed as argument.
 The main method, in this case, is the parse() method, from the LocalDateTime or ZonedDateTime classes.
-It is then performed some data and time calculations, by using the checkIfLocalDateTimeIsGreaterThanOneCenturyFromNow()
+It is then performed some date and time calculations, by using the checkIfLocalDateTimeIsGreaterThanOneCenturyFromNow()
 method, in order to check if the parsed LocalDateTime has more or less than one century.
 
 Many more examples of date and time comparisons and calculations can be demonstrated with this API, using a diversion
