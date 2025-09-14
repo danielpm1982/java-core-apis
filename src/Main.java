@@ -1,4 +1,5 @@
 import com.danielpm1982.annotation.MyAnnotation;
+import com.danielpm1982.cryptography.MyCryptography;
 import com.danielpm1982.datetime.MyDateTime;
 import com.danielpm1982.optional.MyOptional;
 import com.danielpm1982.reflection.MyReflection;
@@ -25,6 +26,10 @@ public class Main {
         System.out.println("Initializing RegEx API demonstration...\n");
         MyRegex.execute();
         System.out.println("\nRegEx API demonstration successfully executed !");
+        System.out.println("\n=============================================\n");
+        System.out.println("Initializing Cryptography API demonstration...\n");
+        MyCryptography.execute();
+        System.out.println("\nCryptography API demonstration successfully executed !");
     }
 }
 
