@@ -1,35 +1,40 @@
 import com.danielpm1982.annotation.MyAnnotation;
 import com.danielpm1982.cryptography.MyCryptography;
 import com.danielpm1982.datetime.MyDateTime;
+import com.danielpm1982.nio2.MyNIO2;
 import com.danielpm1982.optional.MyOptional;
 import com.danielpm1982.reflection.MyReflection;
 import com.danielpm1982.regex.MyRegex;
 
 public class Main {
-    public static void main(String[] args) {
-        System.out.println("Initializing Optional API demonstration...\n");
+    void main(String[] args) {
+        IO.println("Initializing Optional API demonstration...\n");
         MyOptional.execute();
-        System.out.println("\nOptional API demonstration successfully executed !");
-        System.out.println("\n=============================================\n");
-        System.out.println("Initializing DateTime API demonstration...\n");
+        IO.println("\nOptional API demonstration successfully executed !");
+        IO.println("\n=============================================\n");
+        IO.println("Initializing DateTime API demonstration...\n");
         MyDateTime.execute();
-        System.out.println("\nDateTime API demonstration successfully executed !");
-        System.out.println("\n=============================================\n");
-        System.out.println("Initializing Reflection API demonstration...\n");
+        IO.println("\nDateTime API demonstration successfully executed !");
+        IO.println("\n=============================================\n");
+        IO.println("Initializing Reflection API demonstration...\n");
         MyReflection.execute();
-        System.out.println("\nReflection API demonstration successfully executed !");
-        System.out.println("\n=============================================\n");
-        System.out.println("Initializing Annotation API demonstration...\n");
+        IO.println("\nReflection API demonstration successfully executed !");
+        IO.println("\n=============================================\n");
+        IO.println("Initializing Annotation API demonstration...\n");
         MyAnnotation.execute();
-        System.out.println("\nAnnotation API demonstration successfully executed !");
-        System.out.println("\n=============================================\n");
-        System.out.println("Initializing RegEx API demonstration...\n");
+        IO.println("\nAnnotation API demonstration successfully executed !");
+        IO.println("\n=============================================\n");
+        IO.println("Initializing RegEx API demonstration...\n");
         MyRegex.execute();
-        System.out.println("\nRegEx API demonstration successfully executed !");
-        System.out.println("\n=============================================\n");
-        System.out.println("Initializing Cryptography API demonstration...\n");
+        IO.println("\nRegEx API demonstration successfully executed !");
+        IO.println("\n=============================================\n");
+        IO.println("Initializing Cryptography API demonstration...\n");
         MyCryptography.execute();
-        System.out.println("\nCryptography API demonstration successfully executed !");
+        IO.println("\nCryptography API demonstration successfully executed !");
+        IO.println("\n=============================================\n");
+        IO.println("Initializing NIO2 API demonstration...\n");
+        MyNIO2.execute();
+        IO.println("\nNIO2 API demonstration successfully executed !");
     }
 }
 
