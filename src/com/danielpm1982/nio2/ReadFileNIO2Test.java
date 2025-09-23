@@ -13,7 +13,7 @@ public class ReadFileNIO2Test {
 //            fileTempLinesList.forEach(IO::println);
             Files.readAllLines(filePath);
         } catch (IOException e) {
-            throw new RuntimeException("Error reading file at path "+filePath.toString()+" ! "+e.getMessage());
+            throw new RuntimeException("Error reading file at path "+filePath+" ! "+e.getMessage());
         }
         long time2 = System.currentTimeMillis();
         IO.println("Java NIO2 API took "+(time2-time1)+"ms for reading the big file !");
@@ -21,11 +21,10 @@ public class ReadFileNIO2Test {
 }
 
 /*
-Through the readFileUsingNIO2API() method, this class shows the easiest way of reading a file (although not the most efficient
-one), by using the Java NIO2 API. It reads all lines of a file, from a given path, directly into a List<String>, using the Files
-class. It probably uses some sort of buffer internally, for reading the bytes from the file and then converting to String,
-considering the defined charset. But the programmer won't have to deal with that low-level treatment of the file content, and may
-manipulate the String lines at the List<String> directly... showing them at the console or outputting to any other file or socket.
-We're not printing the content here to the console, we're just measuring the efficiency in reading the file by using this NIO2 API.
-The time in milliseconds for the process is then displayed.
+Through the readFileUsingNIO2API() method, and using only the NIO.2 API package - java.nio.file, this class shows the easiest way
+of reading a file (although not the most efficient one), by using the Java NIO2 API. It reads all lines of a file, from a given path,
+directly into a List<String>, using the Files class. With this API, the programmer doesn't have to deal with low-level treatment of the
+file data, and may manipulate the String lines at the List<String> at once... showing them at the console or outputting to any other
+file or socket. We're not printing the content here to the console, we're just measuring the efficiency in reading the file by using
+this NIO2 API. The time in milliseconds for the process is then displayed.
 */

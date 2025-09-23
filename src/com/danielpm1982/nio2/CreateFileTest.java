@@ -8,22 +8,22 @@ import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 
 public class CreateFileTest {
-    public static void creatSampleBigFile(Path filePath) {
+    public static void creatSampleBigFile(Path directoryPath, Path filePath) {
         final long myMaxFileSizeInBytes = 200*1024*1024;
         final String myBaseLineText = "This is a test text line !\n";
-        if(BigFileGenerator.generateBigFileAtProjectRootPath(filePath, myMaxFileSizeInBytes, myBaseLineText)){
+        if(BigFileGenerator.generateBigFileAtProjectRootPath(directoryPath, filePath, myMaxFileSizeInBytes, myBaseLineText)){
             showFileProperties(filePath);
         }
     }
     @SuppressWarnings("SameParameterValue")
     private static void showFileProperties(Path filePath){
-        if(!filePath.toFile().exists()){
+        if(Files.notExists(filePath)){
             throw new RuntimeException("File at path doesn't exist ! Cannot show file properties ! "+filePath);
         }
         try{
             BasicFileAttributeView fileAttributeView = Files.getFileAttributeView(filePath, BasicFileAttributeView.class);
             IO.println("File attributes...\n" +
-                    "path: " + filePath.toAbsolutePath().toString() + "\n" +
+                    "path: " + filePath.toAbsolutePath() + "\n" +
                     "creation time: " + showDateTimeStringFromFileTime(fileAttributeView.readAttributes().creationTime()) + "\n" +
                     "last accessed: " + showDateTimeStringFromFileTime(fileAttributeView.readAttributes().lastAccessTime()) + "\n" +
                     "last modified: " + showDateTimeStringFromFileTime(fileAttributeView.readAttributes().lastModifiedTime()) + "\n" +
@@ -54,8 +54,9 @@ public class CreateFileTest {
 }
 
 /*
-By calling the BigFileGenerator.generateBigFileAtProjectRootPath() method, this class triggers the creation of a sample big file,
-at a given path, with the max size and String line content defined here. If the file is successfully created, or if the file already
-exists - by having already being created at a previous run, this class then displays at the console the basic file properties of
-such file. Basically, it calls for the creation of the big file and shows its properties.
+By calling the BigFileGenerator.generateBigFileAtProjectRootPath() method, and using only NIO.2 API package - java.nio.file,
+this class triggers the creation of a sample big file, at a given path, with the max size and String line content defined here.
+If the file is successfully created and written, or if the file already exists - from a previous run, this class then displays
+at the console the basic file properties of such file. Basically, it calls for the creation of the big file and then shows its
+properties.
 */

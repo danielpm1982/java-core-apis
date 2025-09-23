@@ -13,7 +13,7 @@ public class ReadFileIOTest {
 //                IO.println(bufferedReader.readLine());
             }
         } catch (IOException e) {
-            throw new RuntimeException("Error reading file at path "+filePath.toString()+" ! "+e.getMessage());
+            throw new RuntimeException("Error reading file at path "+filePath+" ! "+e.getMessage());
         }
         long time2 = System.currentTimeMillis();
         IO.println("Java IO API took "+(time2-time1)+"ms for reading the big file !");
@@ -21,8 +21,8 @@ public class ReadFileIOTest {
 }
 
 /*
-Through the readFileUsingIOAPI() method, this class shows a traditional way of reading a file, by using the Java IO API.
-It reads a file, from a given path, into a buffer, line by line, using the FileReader and BufferedReader classes. We're not
-printing the content here to the console, we're just measuring the efficiency in reading the file by using this IO API.
-The time in milliseconds for the process is then displayed.
+Through the readFileUsingIOAPI() method, and using only the IO API package - java.io, this class shows a traditional way of
+reading a file. It reads a file, from a given path, into a buffer, line by line, using the FileReader and BufferedReader
+classes. We're not printing the content here to the console, we're just measuring the efficiency in reading the file by using
+this IO API. The time in milliseconds for the process is then displayed.
 */
