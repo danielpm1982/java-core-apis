@@ -10,17 +10,17 @@ This is a simple Java 25 console app repo that exemplifies how to work with the 
 
 [**Content**]<br>
 This project tackles some of the main Java 25 APIs, including, but not limited to:
-- Optional
-- DateTime
-- Reflection
-- Annotation
-- RegEx
-- Cryptography
+- [Optional](https://github.com/danielpm1982/java-core-apis/tree/master/src/com/danielpm1982/optional)
+- [DateTime](https://github.com/danielpm1982/java-core-apis/tree/master/src/com/danielpm1982/datetime)
+- [Reflection](https://github.com/danielpm1982/java-core-apis/tree/master/src/com/danielpm1982/reflection)
+- [Annotation](https://github.com/danielpm1982/java-core-apis/tree/master/src/com/danielpm1982/annotation)
+- [RegEx](https://github.com/danielpm1982/java-core-apis/tree/master/src/com/danielpm1982/regex)
+- [Cryptography](https://github.com/danielpm1982/java-core-apis/tree/master/src/com/danielpm1982/cryptography)
 - Stream
 - Exception
 - Logger
-- Collection
-- Input/Output (IO, NIO, NIO2)
+- [Collection](https://github.com/danielpm1982/java-core-apis/tree/master/src/com/danielpm1982/collection)
+- [Input/Output (IO, NIO, NIO2)](https://github.com/danielpm1982/java-core-apis/tree/master/src/com/danielpm1982/nio2)
 
 [**Source Code and Run**]<br>
 Source code available at github.com, through the following link:<br>
@@ -36,6 +36,7 @@ You can clone this project locally with you Git or import the repository directl
 ![regex.png](./img/regex.png)
 ![cryptography.png](./img/cryptography.png)
 ![nio2.png](./img/nio2.png)
+![collections.png](./img/collections.png)
 
 [**Support**]<br>
 If you have any suggestion or correction about the content of this repository, please, feel free to open an issue at the project issues' section:<br>

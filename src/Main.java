@@ -1,4 +1,5 @@
 import com.danielpm1982.annotation.MyAnnotation;
+import com.danielpm1982.collection.MyCollection;
 import com.danielpm1982.cryptography.MyCryptography;
 import com.danielpm1982.datetime.MyDateTime;
 import com.danielpm1982.nio2.MyNIO2;
@@ -35,6 +36,10 @@ public class Main {
         IO.println("Initializing NIO2 API demonstration...\n");
         MyNIO2.execute();
         IO.println("\nNIO2 API demonstration successfully executed !");
+        IO.println("\n=============================================\n");
+        IO.println("Initializing Collections API demonstration...\n");
+        MyCollection.execute();
+        IO.println("\nCollections API demonstration successfully executed !");
     }
 }
 
