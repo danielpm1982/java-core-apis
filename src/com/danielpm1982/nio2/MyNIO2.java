@@ -18,6 +18,9 @@ public class MyNIO2 {
         IO.println("\nAttempting to read a sample big file using NIO2 API...");
         ReadFileNIO2Test.readFileUsingNIO2API(myFilePath);
     }
+    void main(){
+        execute();
+    }
 }
 
 /*

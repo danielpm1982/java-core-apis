@@ -11,6 +11,9 @@ public class MyReflection {
             Logger.getLogger(MyReflection.class.getName()).log(Level.SEVERE, "An exception has been thrown: "+e.getClass().getName());
         }
     }
+    void main(){
+        execute();
+    }
 }
 
 /*

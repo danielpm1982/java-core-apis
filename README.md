@@ -21,22 +21,32 @@ This project tackles some of the main Java 25 APIs, including, but not limited t
 - Logger
 - [Collection](https://github.com/danielpm1982/java-core-apis/tree/master/src/com/danielpm1982/collection)
 - [Input/Output (IO, NIO, NIO2)](https://github.com/danielpm1982/java-core-apis/tree/master/src/com/danielpm1982/nio2)
+- [Networking](https://github.com/danielpm1982/java-core-apis/tree/master/src/com/danielpm1982/networking)
 
 [**Source Code and Run**]<br>
 Source code available at github.com, through the following link:<br>
 [https://github.com/danielpm1982/java-core-apis](https://github.com/danielpm1982/java-core-apis) <br>
-You can clone this project locally with you Git or import the repository directly to your IDE. The IDE used to create this project was IntelliJ Ultimate, but it should run on any IDE. If your IDE demands the creation of a module to run this project, as IntelliJ, you can simply do it by accessing the modules section, at the Projects Structure Setting of the IDE, and asking it to create the module, setting your local JDK or JRE at it. As modules involve individual custom configurations of your local environment, the .iml files shouldn't be pushed to the remote Git repository (or GitHub). Each person should create his own project modules. Also, as this is a project aimed at beginners, we've not used Maven nor Containerized the application. It's just simple Java classes, to be compiled and run by your Java 25 local installation.
+You can clone this project locally with your local Git or import the repository directly into your IDE. The IDE used to create this project was IntelliJ Ultimate, but it should run on any IDE. If your IDE demands the creation of a module to run this project, as IntelliJ does, you can simply do it by accessing the modules section, at the Projects Structure Setting of the IDE, and asking it to create the module, setting your local JDK path at it. As modules involve individual custom configurations of your local environment, the .iml files shouldn't be pushed to the remote Git repository (or GitHub). Each person should create his own project modules. Also, as this is a project aimed at beginners, we've not used Maven nor Containerized the application. It's just simple Java Core classes, to be compiled and run by your Java JDK 25 local installation.
 
 [**Printscreen samples**]<br>
 
 ![optional.png](./img/optional.png)
+
 ![datetime.png](./img/datetime.png)
+
 ![reflection.png](./img/reflection.png)
+
 ![annotation.png](./img/annotation.png)
+
 ![regex.png](./img/regex.png)
+
 ![cryptography.png](./img/cryptography.png)
+
 ![nio2.png](./img/nio2.png)
+
 ![collections.png](./img/collections.png)
+
+![networking.png](./img/networking.png)
 
 [**Support**]<br>
 If you have any suggestion or correction about the content of this repository, please, feel free to open an issue at the project issues' section:<br>

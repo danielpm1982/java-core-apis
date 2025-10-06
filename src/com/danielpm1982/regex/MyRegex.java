@@ -23,6 +23,9 @@ public class MyRegex {
             }
         }
     }
+    void main(){
+        execute();
+    }
 }
 
 /*

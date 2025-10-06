@@ -12,6 +12,9 @@ public class MyOptional {
                         orElse(MyItemSupplier.getEmptyItem())));
         itemList.forEach(System.out::println);
     }
+    void main(){
+        execute();
+    }
 }
 
 /*

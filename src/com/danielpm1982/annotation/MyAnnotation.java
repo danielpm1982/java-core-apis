@@ -25,6 +25,9 @@ public class MyAnnotation {
         beanInstanceMethodList.stream().filter(method -> !method.isAnnotationPresent(VisibleMethod.class)).
                 forEach(System.out::println);
     }
+    void main() {
+        execute();
+    }
 }
 
 /*

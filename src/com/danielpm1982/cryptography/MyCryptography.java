@@ -52,6 +52,9 @@ public class MyCryptography {
         System.out.println("String successfully decrypted !");
         return new String(decryptedStringByteArray);
     }
+    void main(){
+        execute();
+    }
 }
 
 /*

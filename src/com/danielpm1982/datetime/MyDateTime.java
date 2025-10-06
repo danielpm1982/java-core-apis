@@ -29,6 +29,9 @@ public class MyDateTime {
             System.out.println(out+" is less than 1 century old than the current date !");
         }
     }
+    void main(){
+        execute();
+    }
 }
 
 /*
